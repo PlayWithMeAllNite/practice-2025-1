@@ -1,0 +1,519 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Синяя шапка */
+header {
+  background-color: #1a4b8c; /* Синий цвет вместо красного */
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Навигация с кнопками */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 30px; /* Закругленные углы */
+  background-color: rgba(255,255,255,0.2); /* Полупрозрачный фон */
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+nav a:hover {
+  background-color: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+nav a:active {
+  transform: translateY(0);
+}
+
+/* Серый подвал */
+footer {
+  background-color: #eeeeee; /* Серый цвет */
+  padding: 20px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+/* Остальные стили */
+main {
+  padding: 30px 40px;
+  min-height: 400px;
+}
+
+.annotation {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.cover img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  margin-bottom: 15px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.plain-link {
+  color: #1a4b8c;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.plain-link:hover {
+  text-decoration: underline;
+  color: #0d3a6b;
+}
+/* Стили для блока аннотации */
+.annotation {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.annotation h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.annotation-content {
+  line-height: 1.6;
+}
+
+.annotation-content strong {
+  color: #3498db;
+}
+
+.annotation ul {
+  padding-left: 20px;
+}
+
+.annotation li {
+  margin-bottom: 8px;
+}
+.project-annotation {
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 30px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-left: 5px solid #3498db;
+}
+
+.project-annotation h2 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.annotation-content {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.annotation-content p {
+  margin-bottom: 15px;
+}
+
+.annotation-content strong {
+  color: #2980b9;
+  font-weight: 600;
+}
+
+.annotation-content ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.annotation-content li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.annotation-content li:before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+/* Стиль активной ссылки в навигации */
+.desktop-nav a.active {
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Стили для блока с результатами */
+.results-block {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.result-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.result-item h4 {
+  color: #3498db;
+  margin-top: 0;
+}
+
+/* Стили для второго изображения */
+.image-block .second-image {
+  margin-top: 20px;
+}
+
+/* Общие стили для заголовков */
+h3 {
+  color: #2c3e50;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+/* Стили аннотации в едином стиле с проектом */
+.project-annotation {
+  margin-bottom: 40px;
+}
+
+.project-annotation h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.project-annotation h3 {
+  font-size: 18px;
+  color: #444;
+  margin: 15px 0 10px 0;
+}
+
+.project-annotation .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.project-annotation .text-block {
+  flex: 1;
+}
+
+.project-annotation .image-block {
+  flex: 1;
+  text-align: center;
+}
+
+.project-annotation .image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Стили для раздела документов */
+.docs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section__title {
+  color: #1a4b8c;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Сетка документов */
+.docs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+/* Карточки документов */
+.doc__card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.doc__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  border-color: #1a4b8c;
+}
+
+.doc__card h3 {
+  color: #1a4b8c;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.doc__card p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Индикатор типа файла */
+.file-type {
+  display: inline-block;
+  background-color: #1a4b8c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .docs__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section__title {
+    font-size: 24px;
+  }
+}
+
+/* Стили для раздела документов */
+.docs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section__title {
+  color: #1a4b8c;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Сетка документов */
+.docs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+/* Карточки документов */
+.doc__card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.doc__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  border-color: #1a4b8c;
+}
+
+.doc__card h3 {
+  color: #1a4b8c;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding-right: 40px; /* Для иконки */
+}
+
+.doc__card p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Иконки типов файлов */
+.file-type {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.file-type.pdf {
+  background-image: url('../icons/pdf-icon.svg');
+}
+
+.file-type.mp4 {
+  background-image: url('../icons/video-icon.svg');
+}
+
+/* Бейдж типа файла */
+.file-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.file-badge.pdf {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.file-badge.mp4 {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .docs__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section__title {
+    font-size: 24px;
+  }
+}
+/* Стили для страницы участников */
+.team-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-group {
+  margin: 40px 0;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+.member-card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+}
+
+.member-card h4 {
+  color: #1a4b8c;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.role {
+  color: #666;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+.member-card ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.member-card li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.team-photo {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.team-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.team-photo p {
+  color: #666;
+  margin-top: 15px;
+  font-size: 14px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Журнал проекта</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="desktop-header">
+      <div class="logo">
+        <h1>Автоматизация формирования индивидуального плана аспиранта</h1>
+        <p>Кафедра прикладной информатики</p>
+      </div>
+      <nav class="desktop-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="team.html">Участники</a>
+        <a href="journal.html" class="active">Журнал</a>
+        <a href="docs.html">Ресурсы</a>
+      </nav>
+    </header>
+
+    <main class="desktop-content">
+      <section class="journal">
+        <h2>Журнал проекта</h2>
+        
+        <!-- Отчет об анализе -->
+        <div class="journal-entry">
+          <h3>03.02.2025 - Старт проекта</h3>
+          <p>Проведён анализ исходного документа ИУП, выявлены основные проблемы форматирования:</p>
+          <ul>
+            <li>Открытые текстовые поля без ограничений</li>
+            <li>Некорректный ввод дат и оценок</li>
+            <li>Ручное выравнивание пробелами</li>
+          </ul>
+          <div class="docs__grid">
+            <a href="docs/1.docx" class="doc__card" target="_blank">
+              <h3>Анализ документа</h3>
+              <span class="file-badge pdf">DOCX</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Промежуточный отчет -->
+        <div class="journal-entry">
+          <h3>15.03.2025 - Промежуточные результаты</h3>
+          <p>Разработана структура автоматизированного документа с улучшениями:</p>
+          <ul>
+            <li>Валидация полей ввода</li>
+            <li>Автоматическое заполнение таблиц из Excel-шаблонов</li>
+            <li>Динамические выпадающие списки</li>
+          </ul>
+          <div class="docs__grid">
+            <a href="docs/промежуточный отчет (2).docx" class="doc__card" target="_blank">
+              <h3>Промежуточный отчет</h3>
+              <span class="file-badge pdf">DOCX</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Переделанный файл -->
+        <div class="journal-entry">
+          <h3>28.03.2025 - Финальная версия</h3>
+          <p>Реализованы ключевые улучшения:</p>
+          <ul>
+            <li>Автоматическая генерация учебного плана</li>
+            <li>Интеграция с базой дисциплин</li>
+            <li>Защита структуры таблиц</li>
+          </ul>
+          <div class="docs__grid">
+            <a href="docs/3 (2).docx" class="doc__card" target="_blank">
+              <h3>Шаблон плана (DOCX)</h3>
+              <span class="file-badge pdf">DOCX</span>
+            </a>
+            <a href="docs/3.xlsx" class="doc__card" target="_blank">
+              <h3>База дисциплин (XLSX)</h3>
+              <span class="file-badge pdf">XLSX</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="desktop-footer">
+      <p>Московский Политех | 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
